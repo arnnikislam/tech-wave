@@ -4,7 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <!-- font awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/43ad48246d.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Tech Wave</title>
   </head>
-  <body class="inter-regular"></body>
+  <body class="inter-regular background">
+    <header>
+      <!-- navbar -->
+      <nav class="navbar container">
+        <h1 class="nav-heading">Tech<span>Wave</span></h1>
+        <ul class="nav-links">
+          <li><a href="">About</a></li>
+          <li><a href="">Episodes</a></li>
+          <li><a href="">Host</a></li>
+        </ul>
+        <button class="primary-btn subscribed-btn">
+          Subscribe <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+      </nav>
+    </header>
+
+    <!-- hamburger icon -->
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+    </script>
+  </body>
 </html>
