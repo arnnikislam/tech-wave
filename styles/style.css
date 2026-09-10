@@ -80,6 +80,14 @@ hr {
 .nav-links a {
   color: var(--white-color);
   text-decoration: none;
+  display: inline-block;
+  transition:
+    transform 0.3s ease-in-out,
+    color 0.3s ease;
+}
+.nav-links a:hover {
+  transform: scale(1.2);
+  color: #00ff88;
 }
 /* hamburger button */
 .hamburger {
