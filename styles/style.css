@@ -50,6 +50,10 @@ hr {
   height: 1px;
   background-color: var(--light-purple);
 }
+svg {
+  height: 40px;
+  width: 45px;
+}
 
 /* navbar related styles */
 .navbar {
@@ -167,6 +171,49 @@ hr {
   align-items: center;
 }
 
+/* about section related */
+.about {
+  color: var(--white-color);
+}
+.about-des {
+  max-width: 70%;
+  margin-inline: auto;
+  text-align: center;
+  padding-block: 3rem;
+}
+.about-des h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.about-des p {
+  opacity: 0.8;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.promotional-txt {
+  margin-top: 2rem;
+}
+/* about stats */
+.about-stats-container {
+  padding-inline: 1rem;
+  text-align: center;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding-block: 3rem;
+  margin-inline: auto;
+}
+.stats-card h3 {
+  color: var(--green-color);
+  font-weight: 700;
+  font-size: 3rem;
+}
+.stats-card p {
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+
 /* for mobile devices */
 @media (max-width: 576px) {
   /* navbar */
@@ -198,5 +245,28 @@ hr {
   .subscribed-btn2,
   .spotify-btn {
     font-size: 1rem;
+  }
+
+  /* about section */
+  .about-des {
+    max-width: 92%;
+    padding-block: 1.5rem;
+  }
+  .about-des h2 {
+    font-size: 2rem;
+  }
+  .about-stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .stats-card h3 {
+    font-size: 2rem;
+  }
+  .stats-card p {
+    margin-top: 0.5rem;
+  }
+  svg {
+    height: 25px;
+    width: 30px;
   }
 }
