@@ -41,13 +41,18 @@
   padding: 0.5rem 0.8rem;
   border-radius: 999px;
 }
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgb(65, 37, 103);
+}
 
 /* navbar related styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
   position: relative;
 }
 /* nav heading */
