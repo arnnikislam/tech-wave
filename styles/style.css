@@ -131,6 +131,16 @@ svg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: micFloat 2s ease-in-out infinite;
+}
+@keyframes micFloat {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-10px);
+  }
 }
 .hero-badge {
   position: absolute;
