@@ -72,13 +72,15 @@ svg {
   padding: 1rem 0.5rem;
   position: relative;
 }
-/* nav heading */
-.nav-heading {
+/* nav heading and footer title style */
+.nav-heading,
+.footer-title {
   color: var(--white-color);
   font-weight: 700;
   font-size: 2.5rem;
 }
-.nav-heading span {
+.nav-heading span,
+.footer-title span {
   background: var(--gradient-color);
   -webkit-background-clip: text;
   background-clip: text;
@@ -351,6 +353,9 @@ svg {
 }
 
 /* host section */
+.host {
+  padding-block: 4rem;
+}
 .host-container {
   background-color: var(--semi-light-purple);
   padding: 2rem 1.5rem;
@@ -383,6 +388,42 @@ svg {
   gap: 1rem;
 }
 
+/* footer related styles */
+.footer {
+  background-image: url("../assets/footer-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-container {
+  text-align: center;
+  padding-block: 6rem;
+  width: min(38%, 1200px);
+  margin-inline: auto;
+}
+.footer-des,
+.footer-links a {
+  color: var(--white-color);
+  opacity: 0.8;
+  text-decoration: none;
+}
+.footer-links a > img {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+.footer-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.footer-links {
+  margin-block: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
 /* for mobile devices */
 @media (max-width: 576px) {
   /* shared styles */
@@ -473,12 +514,28 @@ svg {
   }
 
   /* host section */
+  .host {
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+  }
   .host-container {
     flex-direction: column;
     text-align: center;
   }
   .host-des-links {
     justify-content: center;
+  }
+
+  /* footer */
+  .footer-container {
+    padding-block: 2rem;
+    width: 85%;
+  }
+  .footer-links {
+    margin-block: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }
 
@@ -487,5 +544,10 @@ svg {
   /* featured section */
   .featured-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  /* footer */
+  .footer-container {
+    padding-block: 3rem;
+    width: 85%;
   }
 }
