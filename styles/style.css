@@ -456,3 +456,11 @@ svg {
     margin-bottom: 1.5rem;
   }
 }
+
+/* for medium devices */
+@media (min-width: 576.1px) and (max-width: 976px) {
+  /* featured section */
+  .featured-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
