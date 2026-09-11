@@ -10,7 +10,9 @@
   --green-color: #00ff88;
   --white-color: #ffffff;
   --light-purple: rgb(65, 37, 103);
+  --semi-light-purple: #230e3d;
   --dark-purple: #1a0b2e;
+  --normal-light-purple: rgba(53, 17, 101, 0.4);
 }
 
 /* universal styles */
@@ -237,6 +239,72 @@ svg {
 .stats-card p {
   opacity: 0.8;
   margin-top: 1rem;
+}
+
+/* showcase section */
+.showcase {
+  width: 100%;
+  background-color: var(--semi-light-purple);
+  padding-block: 3.5rem;
+}
+.showcase-container {
+  max-width: 80%;
+  margin-inline: auto;
+}
+.showcase-container h2 {
+  font-size: 3rem;
+  color: var(--white-color);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+/* for grid areas */
+.card-1 {
+  grid-area: card1;
+}
+.card-2 {
+  grid-area: card2;
+}
+.card-3 {
+  grid-area: card3;
+}
+.card-4 {
+  grid-area: card4;
+}
+.card-5 {
+  grid-area: card5;
+}
+.showcase-card-container {
+  display: grid;
+  grid-template-areas:
+    "card1 card2 card2"
+    "card1 card3 card3"
+    "card4 card4 card5";
+  gap: 2rem;
+}
+.showcase-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  background-color: var(--normal-light-purple);
+  padding: 2rem 1.5rem;
+  border-radius: 40px;
+}
+.showcase-card-img {
+  display: block;
+  width: 55px;
+  height: 55px;
+}
+.showcase-card-title {
+  font-weight: 700;
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+.showcase-card-des {
+  color: var(--white-color);
+  opacity: 0.8;
+  font-size: 1rem;
 }
 
 /* for mobile devices */
