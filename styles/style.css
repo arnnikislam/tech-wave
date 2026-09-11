@@ -243,13 +243,8 @@ svg {
 
 /* showcase section */
 .showcase {
-  width: 100%;
   background-color: var(--semi-light-purple);
   padding-block: 3.5rem;
-}
-.showcase-container {
-  max-width: 80%;
-  margin-inline: auto;
 }
 .showcase-container h2 {
   font-size: 3rem;
@@ -385,7 +380,7 @@ svg {
     gap: 1rem;
   }
   .showcase-container {
-    max-width: 85%;
+    width: 85%;
   }
   .showcase-container h2 {
     font-size: 1.5rem;
