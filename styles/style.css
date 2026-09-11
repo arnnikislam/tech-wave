@@ -290,6 +290,13 @@ svg {
   background-color: var(--normal-light-purple);
   padding: 2rem 1.5rem;
   border-radius: 40px;
+  transition:
+    transform 0.3s ease,
+    background-color 0.5s ease;
+}
+.showcase-card:hover {
+  transform: translateY(-10px);
+  background-color: rgba(53, 17, 101, 0.8);
 }
 .showcase-card-img {
   display: block;
