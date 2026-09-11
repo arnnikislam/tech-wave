@@ -13,6 +13,7 @@
   --semi-light-purple: #230e3d;
   --dark-purple: #1a0b2e;
   --normal-light-purple: rgba(53, 17, 101, 0.4);
+  --hover-color: rgba(53, 17, 101, 0.8);
 }
 
 /* universal styles */
@@ -288,7 +289,7 @@ svg {
 }
 .showcase-card:hover {
   transform: translateY(-10px);
-  background-color: rgba(53, 17, 101, 0.8);
+  background-color: var(--hover-color);
 }
 .showcase-card-img {
   display: block;
@@ -318,6 +319,13 @@ svg {
 .featured-card-container {
   background-color: var(--normal-light-purple);
   border-radius: 30px;
+  transition:
+    transform 0.3s ease,
+    background-color 0.5s ease;
+}
+.featured-card-container:hover {
+  transform: translateY(-10px);
+  background-color: var(--hover-color);
 }
 .featured-card-container > img {
   display: block;
@@ -364,6 +372,13 @@ svg {
   justify-content: center;
   align-items: center;
   border-radius: 30px;
+  transition:
+    transform 0.3s ease,
+    background-color 0.5s ease;
+}
+.host-container:hover {
+  transform: translateY(-10px);
+  background-color: var(--hover-color);
 }
 .host-des h3 {
   font-weight: 700;
@@ -375,13 +390,19 @@ svg {
   opacity: 0.8;
   margin-block: 1rem;
 }
-.host-des-links img {
-  display: block;
-  height: 35px;
-  width: 35px;
-  padding: 7px;
+.host-des-links a {
+  padding: 10px;
   border: 1px solid rgba(255, 255, 255, 0.356);
   border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.host-des-links a:hover {
+  transform: scale(0.7);
+}
+.host-des-links img {
+  display: block;
+  height: 20px;
+  width: 20px;
 }
 .host-des-links {
   display: flex;
@@ -417,6 +438,9 @@ svg {
   justify-content: center;
   align-items: center;
   gap: 8px;
+}
+.footer-links a:hover {
+  text-decoration: underline;
 }
 .footer-links {
   margin-block: 1.5rem;
