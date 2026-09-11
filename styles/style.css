@@ -56,6 +56,13 @@ svg {
   height: 40px;
   width: 45px;
 }
+.common-section-title {
+  font-size: 3rem;
+  color: var(--white-color);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
 
 /* navbar related styles */
 .navbar {
@@ -208,11 +215,6 @@ svg {
   text-align: center;
   padding-block: 3rem;
 }
-.about-des h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
 .about-des p {
   opacity: 0.8;
   font-size: 1rem;
@@ -245,13 +247,6 @@ svg {
 .showcase {
   background-color: var(--semi-light-purple);
   padding-block: 3.5rem;
-}
-.showcase-container h2 {
-  font-size: 3rem;
-  color: var(--white-color);
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 3rem;
 }
 /* for grid areas */
 .card-1 {
@@ -318,13 +313,6 @@ svg {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
-.featured-title {
-  font-size: 3rem;
-  color: var(--white-color);
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 3rem;
-}
 .featured-card-container {
   background-color: var(--normal-light-purple);
   border-radius: 30px;
@@ -362,8 +350,48 @@ svg {
   font-weight: 700;
 }
 
+/* host section */
+.host-container {
+  background-color: var(--semi-light-purple);
+  padding: 2rem 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.host-des h3 {
+  font-weight: 700;
+  color: var(--white-color);
+  font-size: 2rem;
+}
+.host-des p {
+  color: var(--white-color);
+  opacity: 0.8;
+  margin-block: 1rem;
+}
+.host-des-links img {
+  display: block;
+  height: 35px;
+  width: 35px;
+  padding: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.356);
+  border-radius: 50%;
+}
+.host-des-links {
+  display: flex;
+  gap: 1rem;
+}
+
 /* for mobile devices */
 @media (max-width: 576px) {
+  /* shared styles */
+  .common-section-title {
+    font-size: 1.5rem;
+    padding-inline: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
   /* navbar */
   .nav-links,
   .subscribed-btn {
@@ -400,9 +428,6 @@ svg {
     max-width: 92%;
     padding-block: 1.5rem;
   }
-  .about-des h2 {
-    font-size: 2rem;
-  }
   .about-stats-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -435,10 +460,6 @@ svg {
   .showcase-container {
     width: 85%;
   }
-  .showcase-container h2 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
   .showcase-card-title {
     font-size: 1.3rem;
   }
@@ -450,10 +471,14 @@ svg {
   .featured-container {
     grid-template-columns: 1fr;
   }
-  .featured-title {
-    font-size: 1.5rem;
-    padding-inline: 1rem;
-    margin-bottom: 1.5rem;
+
+  /* host section */
+  .host-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .host-des-links {
+    justify-content: center;
   }
 }
 
