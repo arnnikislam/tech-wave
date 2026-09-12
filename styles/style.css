@@ -322,16 +322,34 @@ svg {
   transition:
     transform 0.3s ease,
     background-color 0.5s ease;
+  position: relative;
 }
 .featured-card-container:hover {
   transform: translateY(-10px);
   background-color: var(--hover-color);
 }
-.featured-card-container > img {
+.play-icon-container > img {
   display: block;
   width: 100%;
   height: 200px;
   border-radius: 30px 30px 0 0;
+}
+.play-icon-container {
+  position: relative;
+}
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.play-icon img {
+  display: block;
+  width: 55px;
+  height: 55px;
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
+  border-radius: 50%;
 }
 .featured-card-des {
   padding: 1.5rem;
